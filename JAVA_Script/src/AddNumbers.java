@@ -20,6 +20,5 @@ public class AddNumbers
 		int sum = THDdigit + SECdigit + FSTdigit;
 
 		System.out.println("각 자릿수의 합"+sum);
-		System.out.printf("%d %d %d",THDdigit, SECdigit, FSTdigit);
 	}
 }
