@@ -1,7 +1,8 @@
-//연습문제 4-1
+//연습문제 4-1+2
 
 class Triangle
 {
+	//	연습문제 4-1
 	double width;
 	double height;
 	double area;
@@ -21,14 +22,36 @@ class Triangle
 		area = 0.5 * width * height;
 		return area;
 	}
+	//	연습문제 4-2
+	//
+	//	Triangle 클래스를 불러와 findArea를 쓰게 한다.
+	boolean isSameArea(Triangle t)
+	{
+	//	this 필드변수로 명령문을 사용하는 객체를 정의하고
+	//		=>매게변수로 지정할 다른 객체를 정의한다.
+		double area1 = this.findArea();
+		double area2 = t.findArea();
+	//	boolean으로 같으면 True, 다르면 False를 리턴하게 한다.
+		return area1 == area2 ;
+	}
 }
 
 public class Triangles
 {
 	public static void main(String[] args)
 	{
-		Triangle t = new Triangle(10.0, 5.0);
+	//	연습문제 4-1
+	//		
+	//	Triangle t = new Triangle(10.0, 5.0);
+	//
+	//	System.out.println(t.findArea());
+	
+	//	연습문제 4-2
+		Triangle t1 = new Triangle(10.0, 5.0);
+		Triangle t2 = new Triangle(5.0, 10.0);
+		Triangle t3 = new Triangle(8.0, 8.0);
 
-		System.out.println(t.findArea());
+		System.out.println(t1.isSameArea(t2));
+		System.out.println(t1.isSameArea(t3));
 	}
 }
