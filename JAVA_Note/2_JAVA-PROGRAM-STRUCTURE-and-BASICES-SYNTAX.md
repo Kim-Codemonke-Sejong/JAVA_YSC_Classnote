@@ -54,7 +54,7 @@ public class Hello
 
     `Cricle`, `_Test`, `$SHELL` 은 가능하나, `32Bar`, `ㄱIMPORTANT`, `#dOCS` 은 불가능하다.
 
-- +,-,\*,\ 등 연산자는 포함될 수 없다. 
+- `+,-,*,\` 등 연산자는 포함될 수 없다. 
 
     `sum+sum`, `sub-` 은 불가능하다.
 
