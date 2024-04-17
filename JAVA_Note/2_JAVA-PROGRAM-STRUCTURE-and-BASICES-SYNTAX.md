@@ -64,7 +64,7 @@ public class Hello
 
 - 길이에 제한은 없다.
 
-    'asdhfkjsahdfjkashdfjklsadfhkjlsadfhjkl' 은 가능하다.
+    `asdhfkjsahdfjkashdfjklsadfhkjlsadfhjkl` 은 가능하다.
 
 **식별자를 잘 만드는 방법**
 
