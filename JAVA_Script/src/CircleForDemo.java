@@ -2,12 +2,15 @@
 
 class Circle
 {
+
 	double radius;
 	
-	//정적 변수
+	//	해당 변수는 정적변수다. 클래스 하나에서만 기억을 가지고 있어, 
+	//	다른 객체가 사용해도 초기화되지 않는다.
 	static int numOfCircles = 0;
 	int numCircles = 0;
 
+	//	생성자를 이용해 원의 개수를 카운트한다.
 	public Circle(double radius)
 	{
 		this.radius = radius;
@@ -23,7 +26,6 @@ public class CircleForDemo
 		Circle myCircle = new Circle(10.0);
 		Circle yourCircle = new Circle(5.0);
 
-		//print(); <<정적 메서드이기 때문에, 호출이 불가능하다.
 		System.out.println("원의 개수 : " + Circle.numOfCircles);
 		System.out.println("원의 개수 : " + yourCircle.numCircles);
 	}

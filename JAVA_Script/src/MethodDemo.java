@@ -2,7 +2,7 @@ public class MethodDemo
 {
 	public static void main(String[] args)
 	{
-		/*하단에서는 반복문이 3번 사용됨, 반복문 절약 가능.*/
+		//	주석처리된 아래의 스크립트는 반복문이 3번 사용되었다.
 		/*
 		int sum = 0;
 		for(int i = 0 ; i <= 10 ; i++)
@@ -28,7 +28,9 @@ public class MethodDemo
 		System.out.println("합 (100~1000) : "+sum(100, 1000));
 
 	}
-	/*이 메서드는 main 메서드에서 호출이 가능하다.*/
+	
+	//	이 메서드로 3번의 반복작업이 1번으로 감소하였다.
+	//	이렇게 메서드를 하나 만들면 반복작업이 많이 줄어든다. 
 	public static int sum(int i1, int i2)
 	{
 		int sum = 0;
